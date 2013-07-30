@@ -55,6 +55,9 @@ class News {
 	 * @access protected
 	 */
 	protected  $dateModif;
+	const AUTEUR_INVALIDE = 1;
+	const TITRE_INVALIDE = 2;
+	const CONTENU_INVALIDE = 3;
 
 
 	/**
@@ -64,49 +67,53 @@ class News {
 	 * @return void
 	 */
 
-	public final  function __construct($valeurs = array()) {
+	public  function __construct($valeurs = array()) {
 
 	}
 
 
 	/**
+	 * Méthode assignant les valeurs spécifiées aux attributs correspondant.
 	 * @access public
 	 * @param array $donnees 
 	 * @return void
 	 */
 
-	public final  function hydrate($donnees) {
+	public  function hydrate($donnees) {
 
 	}
 
 
 	/**
+	 * Méthode permettant de savoir si la news est nouvelle.
 	 * @access public
 	 * @return bool const
 	 */
 
-	public final  function isNew() {
+	public  function isNew() {
 
 	}
 
 
 	/**
+	 * Méthode permettant de savoir si la news est valide.
 	 * @access public
 	 * @return bool const
 	 */
 
-	public final  function isValid() {
+	public  function isValid() {
 
 	}
 
 
 	/**
+	 * SETTERS
 	 * @access public
 	 * @param int $id 
 	 * @return void
 	 */
 
-	public final  function setId($id) {
+	public  function setId($id) {
 
 	}
 
@@ -117,7 +124,7 @@ class News {
 	 * @return void
 	 */
 
-	public final  function setAuteur($auteur) {
+	public  function setAuteur($auteur) {
 
 	}
 
@@ -128,7 +135,7 @@ class News {
 	 * @return void
 	 */
 
-	public final  function setTitre($titre) {
+	public  function setTitre($titre) {
 
 	}
 
@@ -139,7 +146,7 @@ class News {
 	 * @return void
 	 */
 
-	public final  function setContenu($contenu) {
+	public  function setContenu($contenu) {
 
 	}
 
@@ -150,7 +157,7 @@ class News {
 	 * @return void
 	 */
 
-	public final  function setDateAjout($dateAjout) {
+	public  function setDateAjout($dateAjout) {
 
 	}
 
@@ -161,7 +168,18 @@ class News {
 	 * @return void
 	 */
 
-	public final  function setDateModif($dateModif) {
+	public  function setDateModif($dateModif) {
+
+	}
+
+
+	/**
+	 * GETTERS
+	 * @access public
+	 * @return array const
+	 */
+
+	public  function erreurs() {
 
 	}
 
@@ -171,17 +189,7 @@ class News {
 	 * @return array const
 	 */
 
-	public final  function erreurs() {
-
-	}
-
-
-	/**
-	 * @access public
-	 * @return array const
-	 */
-
-	public final  function id() {
+	public  function id() {
 
 	}
 
@@ -191,7 +199,7 @@ class News {
 	 * @return string const
 	 */
 
-	public final  function auteur() {
+	public  function auteur() {
 
 	}
 
@@ -201,7 +209,7 @@ class News {
 	 * @return string const
 	 */
 
-	public final  function titre() {
+	public  function titre() {
 
 	}
 
@@ -211,7 +219,7 @@ class News {
 	 * @return string const
 	 */
 
-	public final  function contenu() {
+	public  function contenu() {
 
 	}
 
@@ -221,7 +229,7 @@ class News {
 	 * @return string const
 	 */
 
-	public final  function dateAjout() {
+	public  function dateAjout() {
 
 	}
 
@@ -231,7 +239,7 @@ class News {
 	 * @return string const
 	 */
 
-	public final  function dateModif() {
+	public  function dateModif() {
 
 	}
 

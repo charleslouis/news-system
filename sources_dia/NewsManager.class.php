@@ -5,85 +5,74 @@
  * written by KDO kdo@zpmag.com
  */
 
-class NewsManager {
+abstract class NewsManager {
 
 
 	/**
+	 * Ajouter une news
 	 * @access protected
 	 * @param News $news 
 	 * @return void
 	 */
 
-	protected final  function add(News $news) {
-
-	}
-
+	protected abstract  function add(News $news) ;
 
 	/**
+	 * update une news
 	 * @access protected
 	 * @param News $news 
 	 * @return void
 	 */
 
-	protected final  function update(News $news) {
-
-	}
-
+	protected abstract  function update(News $news) ;
 
 	/**
+	 * delete une news
 	 * @access public
 	 * @param int $id 
 	 * @return void
 	 */
 
-	public final  function delete($id) {
-
-	}
-
+	public abstract  function delete($id) ;
 
 	/**
+	 * save une news
 	 * @access public
 	 * @param News $news 
 	 * @return void
 	 */
 
-	public final  function save(News $news) {
+	public  function save(News $news) {
 
 	}
 
 
 	/**
+	 * compter le nombre total de news
 	 * @access public
 	 * @return int
 	 */
 
-	public final  function count() {
-
-	}
-
+	public abstract  function count() ;
 
 	/**
+	 * obtenir la liste des newsdemandée
 	 * @access public
-	 * @param int $debut 		
+	 * @param int $debut 
 	 * @param int $limite 
 	 * @return array
 	 */
 
-	public final  function getList($debut = -1, $limite = -1) {
-
-	}
-
+	public abstract  function getList($debut = -1, $limite = -1) ;
 
 	/**
+	 * Retourne une news precise
 	 * @access public
 	 * @param int $id 
 	 * @return News
 	 */
 
-	public final  function getUnique($id) {
-
-	}
-
+	public abstract  function getUnique($id) ;
 
 }
 ?>
